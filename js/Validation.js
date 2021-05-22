@@ -1,9 +1,18 @@
 class Validation {
-    isValidFirstName() {
+    isValidFirstName(firstName) {
+        if (!this.isValidMessage(firstName)) {
+            return false;
+        }
         return true;
     }
 
-    isValidLastName() {
+    isValidLastName(lastName) {
+        if (!this.isValidMessage(lastName)) {
+            return false;
+        }
+        if (lastName.length < 2) {
+            return false;
+        }
         return true;
     }
 
@@ -12,13 +21,14 @@ class Validation {
     }
 
     isValidMessage(message) {
-            if (typeof message !== 'string' || message === ''){
-                return false;
-            }
-                return true;
+        if (typeof message !== 'string' || message === '') {
+            console.log('ERROR: Message has to be a text string')
+            return false;
+        }
+        return true;
     }
 
-    isValidPhoneNumber() {
+    isValidPhoneNumber(phoneNumber) {
         return true;
     }
 
