@@ -11,8 +11,11 @@ class Validation {
         return true;
     }
 
-    isValidMessage() {
-        return true;
+    isValidMessage(message) {
+            if (typeof message !== 'string' || message === ''){
+                return false;
+            }
+                return true;
     }
 
     isValidPhoneNumber() {
