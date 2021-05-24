@@ -22,7 +22,7 @@ const v = new Validation();
 //console.log(v.isValidMessage(''), false);
 
 
-console.log(v.isValidPhoneNumber(+37061234567), true);
+//console.log(v.isValidPhoneNumber(+37061234567), true);
 //console.log(v.isValidEmail('demo@example.com'), true);
 //console.log(v.isValidMonthName('Sausis'), true);
 //console.log(v.isValidMonthName('January'), true);
